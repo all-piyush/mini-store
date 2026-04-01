@@ -1,0 +1,58 @@
+#profile{
+    margin:5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form .form-heading{
+    align-self:center;
+    font-size: 2rem;
+}
+.form{
+    justify-content: center;
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #f8fafc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+.form input{
+    height:2.5rem;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid black;
+}
+.form-extra{
+    margin-top: -0.7rem;
+    font-size:smaller;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.form .submit-button{
+    border:none;
+    align-self: center;
+    background-color: black;
+    font-size: 1rem;
+    color: white;
+    height: 2.5rem;
+    padding: 0.5rem;
+    width: 8rem;
+    cursor: pointer;
+}
+.admin{
+    border:none;
+    align-self: center;
+    background-color: purple;
+    font-size: 1rem;
+    color: white;
+    height: 2.5rem;
+    padding: 0.5rem;
+    width: 8rem;
+    cursor: pointer;
+}

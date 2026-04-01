@@ -1,0 +1,135 @@
+#collections{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0rem 1rem 8%;
+}
+#collections .sidebar{
+    display: flex;
+    flex-direction: column;
+    min-width: 14%;
+    gap:1rem;
+}
+.sidebar .categories,.type{
+    padding: 1rem;
+    border:1px solid rgb(209 213 219);
+}
+.categories #men,#women,#kids ,.type #topwear,#bottomwear,#accessories{
+    margin-right: 0.5rem;
+}
+.categories h4,.type h4{
+    margin-bottom: 0.5rem;
+}
+.products{
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+}
+.product{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+.product .card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 20vw;
+    background-color: #f7f7f7;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product .card .addon{
+    display: flex;
+    gap:0.5rem;
+    right:1rem;
+    bottom:0.3rem;
+    max-height: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.product .card .addon .count{
+    font-size: 1.1rem;
+}
+.product .card .price{
+    bottom: 0.3rem;
+    position: absolute;
+}
+.product .card .addon button{
+    padding-top: 0.2rem;
+    height: 1.4rem;
+    width: 1.4rem;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.products #filter{
+        display: none;
+    }
+.product h4{
+    margin-top:0.7rem;
+    margin-bottom: 2rem;
+}
+.product .card img{
+    height: 16rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media(max-width:1100px){
+    
+    .product{
+        justify-content: center;
+    }
+    .product .card{
+        width: 15rem;
+    }
+    .products{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 0;
+    }
+    #collections{
+        margin: 0;
+    }
+    .products .first-bar{
+        display: flex;
+        align-self: end;
+    }
+    .products .first-bar h2{
+        display:none;
+    }
+    .products #filter{
+        display: inline;
+        align-self: end;
+        height: 2rem;
+        width: 7rem;
+        background-color: black;
+        color: white;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        border: none;
+    }
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.35);
+        z-index: 9;
+    }
+    #collections .show{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background: white;
+    padding: 1.5rem;
+    transition: left 0.3s ease;
+    z-index: 100;   
+    }
+    #collections .close{
+        display: none;
+    }
+}
