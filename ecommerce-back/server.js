@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(cors({
   origin:['http://localhost:5173',
-    'https://e-commerce-frontend-2wq7.onrender.com'], 
+    'https://mini-store-c7rx.onrender.com'], 
   credentials: true,          
 }));
 app.use(cookieparser());
