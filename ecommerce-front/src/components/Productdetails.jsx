@@ -8,7 +8,6 @@ const Productdetails = (props) => {
     const {product,cartproducts,setcartproducts}=props;
     const {id}=useParams();
     const selectedproduct=product.filter((p)=>p.product_id==id);
-    console.log(selectedproduct);
     const changecart=async(product, action) =>{
     setcartproducts((prevCart) => {
     const existing = prevCart.find((p) => p.product_id === product.product_id);
